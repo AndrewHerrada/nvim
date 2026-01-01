@@ -29,7 +29,10 @@ require("lazy").setup({
     -- formato
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
+    { import = "lazyvim.plugins.extras.coding.mini-surround" },
 
+    -- Autocompmletado
+    { import = "lazyvim.plugins.extras.coding.blink" },
     -- import/override with your plugins
     { import = "plugins" },
   },
