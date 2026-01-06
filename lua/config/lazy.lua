@@ -22,6 +22,7 @@ require("lazy").setup({
     -- lenguajes
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.clangd" },
 
     -- diseño
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
