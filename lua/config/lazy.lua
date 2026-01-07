@@ -32,12 +32,12 @@ require("lazy").setup({
 
     -- formato
     { import = "lazyvim.plugins.extras.formatting.prettier" },
-    -- { import = "lazyvim.plugins.extras.formatting.biome" },
+    { import = "lazyvim.plugins.extras.formatting.biome" },
 
     -- Codigo
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.mini-snippets" },
-    -- { import = "lazyvim.plugins.extras.coding.blink" },
+    { import = "lazyvim.plugins.extras.coding.blink" },
     -- import/override with your plugins
     { import = "plugins" },
   },
