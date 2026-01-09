@@ -13,7 +13,7 @@
       "//vi memo(n, -1);                           // método alternativo",
       "//memset(arr, 0, sizeof arr);               // vaciado de un array de enteros",
       "const int INF = 1e9;                      // 10^9 = 1B es < 2^31 - 1",
-      "const int LLINF = 4e18;                   // 4*10^18 es < 2^63 - 1",
+      "//const int LLINF = 4e18;                   // 4*10^18 es < 2^63 - 1",
       "const double EPS = 1e-9;                  // un numero muy pequeño",
       "",
       "int main() {",
