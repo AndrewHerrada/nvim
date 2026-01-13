@@ -1,16 +1,47 @@
+-- Coloca este archivo en: ~/.config/nvim/lua/plugins/colorscheme.lua
+-- o en la carpeta donde guardes tus plugins para LazyVim.
+
 return {
-  "sainnhe/gruvbox-material",
-  priority = 1000,
-  config = function()
-    vim.g.gruvbox_material_transparent_background = 1
-    vim.g.gruvbox_material_foreground = "mix"
-    vim.g.gruvbox_material_background = "hard"
-    vim.g.gruvbox_material_ui_contrast = "high"
-    vim.g.gruvbox_material_float_style = "bright"
-    vim.g.gruvbox_material_statusline_style = "mix"
-    vim.g.gruvbox_material_cursor = "auto"
+  "ellisonleao/gruvbox.nvim",
+  priority = 1000, -- asegura que el colorscheme se cargue pronto
+  opts = {
+    terminal_colors = true,
+    undercurl = true,
+    underline = true,
+    bold = true,
+    italic = {
+      strings = true,
+      emphasis = true,
+      comments = true,
+      operators = false,
+      folds = true,
+    },
+    strikethrough = true,
+    inverse = true,
+    contrast = "hard", -- "", "soft" o "hard"
+    dim_inactive = false,
+    transparent_mode = false,
+  },
+  config = function(_, opts)
+    -- aplica la configuración primero
+    require("gruvbox").setup(opts)
+
+    -- elige "dark" o "light" antes de setear el colorscheme
+    vim.o.background = "dark"
   end,
 }
+-- "sainnhe/gruvbox-material",
+-- priority = 1000,
+-- config = function()
+--   vim.g.gruvbox_material_transparent_background = 1
+--   vim.g.gruvbox_material_foreground = "mix"
+--   vim.g.gruvbox_material_background = "hard"
+--   vim.g.gruvbox_material_ui_contrast = "high"
+--   vim.g.gruvbox_material_float_style = "bright"
+--   vim.g.gruvbox_material_statusline_style = "mix"
+--   vim.g.gruvbox_material_cursor = "auto"
+-- end,
+--}
 -- return { "folke/tokyonight.nvim",
 --   priority = 1000,
 --   config = function()
