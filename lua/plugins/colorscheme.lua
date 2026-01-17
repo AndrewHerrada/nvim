@@ -2,34 +2,44 @@
 -- o en la carpeta donde guardes tus plugins para LazyVim.
 
 return {
-  "ellisonleao/gruvbox.nvim",
-  priority = 1000, -- asegura que el colorscheme se cargue pronto
-  opts = {
-    terminal_colors = true,
-    undercurl = true,
-    underline = true,
-    bold = true,
-    italic = {
-      strings = true,
-      emphasis = true,
-      comments = true,
-      operators = false,
-      folds = true,
-    },
-    strikethrough = true,
-    inverse = true,
-    contrast = "hard", -- "", "soft" o "hard"
-    dim_inactive = false,
-    transparent_mode = false,
-  },
-  config = function(_, opts)
-    -- aplica la configuración primero
-    require("gruvbox").setup(opts)
-
-    -- elige "dark" o "light" antes de setear el colorscheme
-    vim.o.background = "dark"
+  "craftzdog/solarized-osaka.nvim",
+  lazy = true,
+  priority = 1000,
+  opts = function()
+    return {
+      transparent = true,
+    }
   end,
 }
+-- return {
+--   "ellisonleao/gruvbox.nvim",
+--   priority = 1000, -- asegura que el colorscheme se cargue pronto
+--   opts = {
+--     terminal_colors = true,
+--     undercurl = true,
+--     underline = true,
+--     bold = true,
+--     italic = {
+--       strings = true,
+--       emphasis = true,
+--       comments = true,
+--       operators = false,
+--       folds = true,
+--     },
+--     strikethrough = true,
+--     inverse = true,
+--     contrast = "hard", -- "", "soft" o "hard"
+--     dim_inactive = false,
+--     transparent_mode = false,
+--   },
+--   config = function(_, opts)
+--     -- aplica la configuración primero
+--     require("gruvbox").setup(opts)
+--
+--     -- elige "dark" o "light" antes de setear el colorscheme
+--     vim.o.background = "dark"
+--   end,
+-- }
 -- "sainnhe/gruvbox-material",
 -- priority = 1000,
 -- config = function()

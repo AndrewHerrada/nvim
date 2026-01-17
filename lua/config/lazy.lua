@@ -17,7 +17,17 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "gruvbox" } },
+    {
+      "LazyVim/LazyVim",
+      import = "lazyvim.plugins",
+      opts = {
+        colorscheme = "solarized-osaka",
+        news = {
+          lazyvim = true,
+          neovim = true,
+        },
+      },
+    },
 
     -- lenguajes
     { import = "lazyvim.plugins.extras.lang.typescript" },
@@ -37,6 +47,8 @@ require("lazy").setup({
     -- Codigo
     --{ import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.mini-snippets" },
+    -- Editor
+    { import = "lazyvim.plugins.extras.editor.harpoon2" },
 
     -- import/override with your plugins
     { import = "plugins" },
