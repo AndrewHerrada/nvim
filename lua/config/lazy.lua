@@ -21,11 +21,11 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        colorscheme = "solarized-osaka",
-        news = {
-          lazyvim = true,
-          neovim = true,
-        },
+        colorscheme = "tokyonight-night",
+        -- news = {
+        --   lazyvim = true,
+        --   neovim = true,
+        -- },
       },
     },
 
@@ -47,6 +47,7 @@ require("lazy").setup({
     -- Codigo
     --{ import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.mini-snippets" },
+    --{ import = "lazyvim.plugins.extras.coding.blink" },
     -- Editor
     { import = "lazyvim.plugins.extras.editor.harpoon2" },
 

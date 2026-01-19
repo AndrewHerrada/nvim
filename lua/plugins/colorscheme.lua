@@ -1,16 +1,21 @@
 -- Coloca este archivo en: ~/.config/nvim/lua/plugins/colorscheme.lua
 -- o en la carpeta donde guardes tus plugins para LazyVim.
-
 return {
-  "craftzdog/solarized-osaka.nvim",
-  lazy = true,
+  "folke/tokyonight.nvim",
+  lazy = false,
   priority = 1000,
-  opts = function()
-    return {
-      transparent = true,
-    }
-  end,
+  opts = {},
 }
+-- return {
+--   "craftzdog/solarized-osaka.nvim",
+--   lazy = true,
+--   priority = 1000,
+--   opts = function()
+--     return {
+--       transparent = true,
+--     }
+--   end,
+-- }
 -- return {
 --   "ellisonleao/gruvbox.nvim",
 --   priority = 1000, -- asegura que el colorscheme se cargue pronto
