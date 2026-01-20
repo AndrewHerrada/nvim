@@ -1,11 +1,18 @@
 -- Coloca este archivo en: ~/.config/nvim/lua/plugins/colorscheme.lua
 -- o en la carpeta donde guardes tus plugins para LazyVim.
+-- lua/plugins/rose-pine.lua
 return {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
+  "rebelot/kanagawa.nvim",
+  -- "rose-pine/neovim",
+  -- name = "rose-pine",
+  -- config = function() end,
 }
+-- return {
+--   "folke/tokyonight.nvim",
+--   lazy = false,
+--   priority = 1000,
+--   opts = {},
+-- }
 -- return {
 --   "craftzdog/solarized-osaka.nvim",
 --   lazy = true,
@@ -14,81 +21,5 @@ return {
 --     return {
 --       transparent = true,
 --     }
---   end,
--- }
--- return {
---   "ellisonleao/gruvbox.nvim",
---   priority = 1000, -- asegura que el colorscheme se cargue pronto
---   opts = {
---     terminal_colors = true,
---     undercurl = true,
---     underline = true,
---     bold = true,
---     italic = {
---       strings = true,
---       emphasis = true,
---       comments = true,
---       operators = false,
---       folds = true,
---     },
---     strikethrough = true,
---     inverse = true,
---     contrast = "hard", -- "", "soft" o "hard"
---     dim_inactive = false,
---     transparent_mode = false,
---   },
---   config = function(_, opts)
---     -- aplica la configuración primero
---     require("gruvbox").setup(opts)
---
---     -- elige "dark" o "light" antes de setear el colorscheme
---     vim.o.background = "dark"
---   end,
--- }
--- "sainnhe/gruvbox-material",
--- priority = 1000,
--- config = function()
---   vim.g.gruvbox_material_transparent_background = 1
---   vim.g.gruvbox_material_foreground = "mix"
---   vim.g.gruvbox_material_background = "hard"
---   vim.g.gruvbox_material_ui_contrast = "high"
---   vim.g.gruvbox_material_float_style = "bright"
---   vim.g.gruvbox_material_statusline_style = "mix"
---   vim.g.gruvbox_material_cursor = "auto"
--- end,
---}
--- return { "folke/tokyonight.nvim",
---   priority = 1000,
---   config = function()
---     local bg = "#011628"
---     local bg_dark = "#011423"
---     local bg_highlight = "#143652"
---     local bg_search = "#0A64AC"
---     local bg_visual = "#275378"
---     local fg = "#CBE0F0"
---     local fg_dark = "#B4D0E9"
---     local fg_gutter = "#627E97"
---     local border = "#547998"
---
---     require("tokyonight").setup({
---       style = "night",
---       on_colors = function(colors)
---         colors.bg = bg
---         colors.bg_dark = bg_dark
---         colors.bg_float = bg_dark
---         colors.bg_highlight = bg_highlight
---         colors.bg_popup = bg_dark
---         colors.bg_search = bg_search
---         colors.bg_sidebar = bg_dark
---         colors.bg_statusline = bg_dark
---         colors.bg_visual = bg_visual
---         colors.border = border
---         colors.fg = fg
---         colors.fg_dark = fg_dark
---         colors.fg_float = fg
---         colors.fg_gutter = fg_gutter
---         colors.fg_sidebar = fg_dark
---       end,
---     })
 --   end,
 -- }
