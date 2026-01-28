@@ -6,7 +6,7 @@ local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = false })
 
 -- Seleccionar todo
-keymap.set("n", "<C-a>", "gg<S-v>G")
+-- keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Increment/decrement
 keymap.set("n", "+", "<C-a>")

@@ -47,7 +47,7 @@ require("lazy").setup({
     -- Codigo
     --{ import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.mini-snippets" },
-    --{ import = "lazyvim.plugins.extras.coding.blink" },
+    { import = "lazyvim.plugins.extras.coding.blink" },
     -- Editor
     { import = "lazyvim.plugins.extras.editor.harpoon2" },
 
