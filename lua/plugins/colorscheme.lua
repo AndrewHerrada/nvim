@@ -15,7 +15,7 @@ return {
       "let g:gruvbox_material_diagnostic_virtual_text = 'colored'",
       "let g:gruvbox_material_enable_bold = 1",
       "let g:gruvbox_material_enable_italic = 1",
-      --"colorscheme gruvbox-material",
+      "colorscheme gruvbox-material",
     }
 
     for _, cmd in ipairs(cmds) do
