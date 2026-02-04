@@ -17,7 +17,6 @@ return {
       "let g:gruvbox_material_enable_italic = 1",
       "colorscheme gruvbox-material",
     }
-
     for _, cmd in ipairs(cmds) do
       vim.cmd(cmd)
     end
