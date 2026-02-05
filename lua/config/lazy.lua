@@ -29,6 +29,8 @@ require("lazy").setup({
       },
     },
 
+    -- ai
+    --{ import = "lazyvim.plugins.extras.ai.claudecode" },
     -- lenguajes
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
