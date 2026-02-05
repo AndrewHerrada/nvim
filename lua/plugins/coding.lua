@@ -1,10 +1,4 @@
 return {
-  -- Incremental rename
-  {
-    "smjonas/inc-rename.nvim",
-    cmd = "IncRename",
-    config = true,
-  },
   -- copilot
   {
     "zbirenbaum/copilot.lua",

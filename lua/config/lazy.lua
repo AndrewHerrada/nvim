@@ -21,40 +21,9 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        --colorscheme = "gruvbox-material",
-        -- news = {
-        --   lazyvim = true,
-        --   neovim = true,
-        -- },
+        colorscheme = "gruvbox-material",
       },
     },
-
-    -- ai
-    --{ import = "lazyvim.plugins.extras.ai.claudecode" },
-    -- lenguajes
-    { import = "lazyvim.plugins.extras.lang.typescript" },
-    { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.lang.clangd" },
-
-    -- diseño
-    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-
-    -- Linting
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-
-    -- formato
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
-    --{ import = "lazyvim.plugins.extras.formatting.biome" },
-
-    -- Codigo
-    --{ import = "lazyvim.plugins.extras.coding.mini-surround" },
-    { import = "lazyvim.plugins.extras.coding.mini-snippets" },
-    { import = "lazyvim.plugins.extras.coding.blink" },
-    -- Editor
-    { import = "lazyvim.plugins.extras.editor.harpoon2" },
-
-    -- UI
-    { import = "lazyvim.plugins.extras.ui.smear-cursor" },
 
     -- import/override with your plugins
     { import = "plugins" },
@@ -68,7 +37,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = { colorscheme = { "gruvbox-material", "habamax" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
