@@ -49,7 +49,7 @@ $status\
 [ ](fg:color_bg3)\
 $line_break$character"""
 
-palette = 'tokyonight'
+palette = 'solarized-osaka'
 
 [palettes.tokyonight]
 color_fg0 = '#15161e'
@@ -64,6 +64,20 @@ color_yellow = '#e0af68'
 color_orange = '#ff9e64'
 color_red = '#f7768e'
 color_purple = '#bb9af7'
+
+[palettes.solarized-osaka]
+color_fg0 = '#001419'
+color_fg1 = '#839395'
+color_bg1 = '#001419'
+color_bg3 = '#002c38'
+color_blue = '#268bd3'
+color_cyan = '#29a298'
+color_teal = '#2aeddd'
+color_green = '#849900'
+color_yellow = '#b28500'
+color_orange = '#c94c16'
+color_red = '#db302d'
+color_purple = '#6d71c4'
 
 [os]
 disabled = false
@@ -136,8 +150,8 @@ format = "[ $path ]($style)"
 truncation_length = 5
 truncation_symbol = "…/"
 truncate_to_repo = false
-repo_root_style = "fg:#1a1b26 bg:color_purple"
-before_repo_root_style = "fg:#3b3254 bg:color_purple"
+repo_root_style = "fg:color_fg0 bg:color_purple"
+before_repo_root_style = "fg:#576d74 bg:color_purple"
 read_only = " 󰌾"
 
 [directory.substitutions]
