@@ -19,3 +19,8 @@ end, { expr = true, noremap = true })
 -- Increment/decrement
 vim.keymap.set("n", "+", "<C-a>")
 vim.keymap.set("n", "-", "<C-x>")
+
+-- Base46 theme picker
+vim.keymap.set("n", "<leader>ut", function()
+  require("nvchad.themes").open()
+end, { desc = "NvChad Themes" })

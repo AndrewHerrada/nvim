@@ -21,7 +21,8 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        colorscheme = "tokyonight",
+        -- Disable LazyVim's colorscheme; base46 handles all theming
+        colorscheme = function() end,
       },
     },
 
@@ -37,7 +38,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = {},
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
@@ -58,3 +59,11 @@ require("lazy").setup({
     },
   },
 })
+
+-- Load base46 theme highlights from cache
+local base46_cache = vim.g.base46_cache
+if vim.uv.fs_stat(base46_cache) then
+  for _, v in ipairs(vim.fn.readdir(base46_cache)) do
+    dofile(base46_cache .. v)
+  end
+end
