@@ -27,12 +27,15 @@
 # # separated by equals signs.
 #font-family = VictorMono Nerd Font
 #font-family = "MapleMono NF"
-#font-family = Lilex
+font-family = Lilex
 #font-family = "IoskeleyMono"
 #font-family = "JetBrainsMono NL"
 #font-family = "GeistMono"
-font-family = "CascadiaCode PL"
-font-feature = ss01
+
+#CASCADIA
+#font-family = "CascadiaCode PL"
+#font-feature = ss01
+
 font-size = 14
 adjust-font-baseline = 1
 theme = Solarized Dark Patched
