@@ -26,8 +26,8 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 #font-family = VictorMono Nerd Font
-#font-family = "MapleMono NF"
-font-family = Lilex
+font-family = "MapleMono NF"
+#font-family = Lilex
 #font-family = "IoskeleyMono"
 #font-family = "JetBrainsMono NL"
 #font-family = "GeistMono"
