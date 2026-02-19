@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Name=Solarized Osaka
+Description=A clean, dark theme inspired by Solarized Osaka
+Type=sddm-theme
+Version=1.0
+Website=https://github.com/craftzdog/solarized-osaka.nvim
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Theme-Id=SolarizedOsaka
+Theme-API=2.0
+License=MIT
+QtVersion=6
