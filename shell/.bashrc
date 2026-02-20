@@ -7,9 +7,11 @@
 
 # Start tmux automatically
 if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
-    tmux new-session -A -s main
+  tmux new-session -A -s main
 fi
 #
+command -v vivid &>/dev/null && export LS_COLORS="$(vivid generate solarized-dark)"
+
 alias ls='eza --icons --color=always'
 alias la='eza --icons --color=always -la'
 alias tree='eza --icons --color=always --tree'
