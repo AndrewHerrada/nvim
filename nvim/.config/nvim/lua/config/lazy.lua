@@ -60,10 +60,15 @@ require("lazy").setup({
   },
 })
 
--- Load base46 theme highlights from cache
+-- Load base46 theme highlights from cache (generate if missing)
 local base46_cache = vim.g.base46_cache
-if vim.uv.fs_stat(base46_cache) then
-  for _, v in ipairs(vim.fn.readdir(base46_cache)) do
-    dofile(base46_cache .. v)
-  end
+local cache_files = vim.uv.fs_stat(base46_cache) and vim.fn.readdir(base46_cache) or {}
+
+if #cache_files == 0 then
+  require("base46").load_all_highlights()
+  cache_files = vim.fn.readdir(base46_cache)
+end
+
+for _, v in ipairs(cache_files) do
+  dofile(base46_cache .. v)
 end
