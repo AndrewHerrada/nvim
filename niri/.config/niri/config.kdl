@@ -295,4 +295,6 @@ environment {
 
 include "windowrules.kdl"
 include "binds.kdl"
+
 include "./noctalia.kdl"
+
