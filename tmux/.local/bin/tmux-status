@@ -60,8 +60,8 @@ SYS=$({
     [[ -n "$D2" ]] &&
         PD2=$(pressure "$D2")
     PAD=" "
-    printf "#[fg=%s] %s %s%s " "$PC" "${PAD:${#CPU}}" "$CPU% " "$(draw "$CPU" 4 "$PC")"
-    printf "#[fg=%s] %s %s " "$PR" "$RAM%" "$(draw "$RAM" 4 "$PR")"
+    printf "#[fg=%s] %s %s%s " "$PC" "${PAD:${#CPU}}" "$CPU% " "$(draw "$CPU" 4 "$PC")"
+    printf "#[fg=%s] %s %s " "$PR" "$RAM%" "$(draw "$RAM" 4 "$PR")"
     printf "#[fg=%s]󰽄 %s %s " "$PD" "$D1%" "$(draw "$D1" 4 "$PD")"
     [[ -n "$D2" ]] &&
         printf "#[fg=%s]󰖟 %s %s" "$PD2" "$D2%" "$(draw "$D2" 4 "$PD2")"
