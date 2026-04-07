@@ -5,7 +5,7 @@ DOTFILES="$(cd "$(dirname "$0")" && pwd)"
 
 # Paquetes de home
 echo "Aplicando stow..."
-stow -d "$DOTFILES" -t "$HOME" shell ghostty nvim starship tmux
+stow -d "$DOTFILES" -t "$HOME" shell ghostty nvim starship tmux kitty
 echo "Symlinks creados."
 
 # TPM (Tmux Plugin Manager)

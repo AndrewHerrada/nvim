@@ -29,19 +29,19 @@ $time\
 [ ](fg:color_bg1)\
 $line_break$character"""
 
-palette = 'solarized_osaka'
+palette = 'oxocarbon'
 
-[palettes.solarized_osaka]
-color_fg0 = '#ede7d3'
-color_bg1 = '#001419'
-color_bg3 = '#002c38'
-color_blue = '#268bd3'
-color_aqua = '#29a298'
-color_green = '#849900'
-color_orange = '#c94c16'
-color_purple = '#6d71c4'
-color_red = '#db302d'
-color_yellow = '#b28500'
+[palettes.oxocarbon]
+color_fg0 = '#161616'   # Texto oscuro para fondos de acento (alto contraste)
+color_bg1 = '#262626'   # Superficie más oscura — segmento de hora
+color_bg3 = '#393939'   # Superficie oscura — segmento docker/env
+color_orange = '#ee5396' # Magenta IBM — OS/usuario (acento primario)
+color_yellow = '#f1c21b' # Amarillo IBM — directorio
+color_aqua = '#3ddbd9'   # Teal IBM — git
+color_blue = '#78a9ff'   # Azul IBM — lenguajes/runtime
+color_green = '#42be65'  # Verde IBM — símbolo de éxito
+color_purple = '#be95ff' # Púrpura IBM — modos vim
+color_red = '#ee5396'    # Magenta IBM — símbolo de error (no hay rojo puro en Oxocarbon)
 
 [os]
 disabled = false
@@ -153,21 +153,21 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 [docker_context]
 symbol = ""
 style = "bg:color_bg3"
-format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
+format = '[[ $symbol( $context) ](fg:#f4f4f4 bg:color_bg3)]($style)'
 
 [conda]
 style = "bg:color_bg3"
-format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
+format = '[[ $symbol( $environment) ](fg:#f4f4f4 bg:color_bg3)]($style)'
 
 [pixi]
 style = "bg:color_bg3"
-format = '[[ $symbol( $version)( $environment) ](fg:color_fg0 bg:color_bg3)]($style)'
+format = '[[ $symbol( $version)( $environment) ](fg:#f4f4f4 bg:color_bg3)]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
 style = "bg:color_bg1"
-format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
+format = '[[  $time ](fg:#f4f4f4 bg:color_bg1)]($style)'
 
 [line_break]
 disabled = false
