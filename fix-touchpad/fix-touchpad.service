@@ -1,0 +1,11 @@
+[Unit]
+Description=Power-cycle Intel LPSS I2C controller (cold-boot ELAN touchpad fix for Huawei MateBook)
+After=systemd-modules-load.service
+ConditionPathExists=/sys/bus/pci/drivers/intel-lpss/0000:00:15.0
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'echo 0000:00:15.0 > /sys/bus/pci/drivers/intel-lpss/unbind; sleep 2; echo 0000:00:15.0 > /sys/bus/pci/drivers/intel-lpss/bind'
+
+[Install]
+WantedBy=multi-user.target
